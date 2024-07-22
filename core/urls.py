@@ -2,7 +2,8 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path('wel/', ReactView.as_view(), name="something"),
-
+    path('category/', CategoryView.as_view(), name="category"),
+    path('company/',CompanyView.as_view(),name='company'),
+    path('mainproduct/',MainProductView.as_view(),name='mainproduct'),
  
 ]
