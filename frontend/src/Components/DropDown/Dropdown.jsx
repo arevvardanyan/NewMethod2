@@ -8,7 +8,7 @@ class Dropdown extends React.Component{
     }
     componentDidMount(){
         let data;
-        axios.get('http://localhost:8000/wel/')
+        axios.get('http://localhost:8000/category/')
         .then(res=>{
             data = res.data;
             this.setState({

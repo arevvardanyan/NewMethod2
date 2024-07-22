@@ -46,6 +46,6 @@ class MainProductView(APIView):
     serializer_class = ProductSerializers
 
     def get(self, request):
-        detail = [{"name": detail.name,"description":detail.description} for detail in MainProduct.objects.all()]
+        detail = [{"name": detail.name,"description":detail.description,"img_1":detail.img_1.path} for detail in MainProduct.objects.all()]
         
         return Response(detail)
